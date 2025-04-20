@@ -1,0 +1,9 @@
+from selenium import webdriver
+
+driver webdriver.Chrome()
+
+driver.get("https://www.google.com/")
+
+input('press enter to close)
+
+driver.close()
