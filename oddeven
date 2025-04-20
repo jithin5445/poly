@@ -1,0 +1,17 @@
+def is_even(num):
+  
+    if num == 0:
+        return 'invalid'
+    elif num % 2 == 0:
+        return 'even'
+    else:
+        return 'odd'
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+
+    # Manual tests
+    print(is_even(4))  # 'even'
+    print(is_even(7))  # 'odd'
+    print(is_even(0))  # 'invalid'
