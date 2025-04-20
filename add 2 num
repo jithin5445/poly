@@ -1,0 +1,19 @@
+def add(a,b):
+    if a==None and b==None:
+        return "Error"
+    if a==None:
+        a=0
+    if b==None:
+        b=0  
+    x=a+b
+    return x
+
+
+if __name__=='__main__':
+    import doctest
+    doctest.testmod()
+    
+print(add(10,None))          
+print(add(10,20))          
+print(add(None,20))          
+print(add(None,None))
